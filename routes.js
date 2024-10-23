@@ -14,31 +14,31 @@ const teste = (req, res)=>{
 router.get('/',teste);
 router.post('/clientes',clientes.create);
 router.get('/clientes', clientes.read);
-router.get('/clientes', clientes.update);
+router.put('/clientes', clientes.update);
 router.delete('/clientes/:id', clientes.deletar);
 
 router.get('/',teste);
 router.post('/telefone',telefone.create);
 router.get('/telefone', telefone.read);
-router.get('/telefone', telefone.update);
+router.put('/telefone', telefone.update);
 router.delete('/telefone/:id', telefone.deletar);
 
 router.get('/',teste);
 router.post('/quartos',quartos.create);
 router.get('/quartos', quartos.read);
-router.get('/quartos', quartos.update);
+router.put('/quartos', quartos.update);
 router.delete('/quartos/:id', quartos.deletar);
 
 router.get('/',teste);
 router.post('/reservas',reservas.create);
 router.get('/reservas', reservas.read);
-router.get('/reservas', reservas.update);
+router.put('/reservas', reservas.update);
 router.delete('/reservas/:id', reservas.deletar);
 
 router.get('/',teste);
 router.post('/estacionamento', estacionamento.create);
 router.get('/estacionamento', estacionamento.read);
-router.get('/estacionamento', estacionamento.update);
+router.put('/estacionamento', estacionamento.update);
 router.delete('/estacionamento/:id', estacionamento.deletar);
 
 module.exports = router;
